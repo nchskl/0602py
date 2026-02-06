@@ -1,4 +1,187 @@
-<html>
-    Hello, World! 
-    @nchskl
+    <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Портфолио студента-программиста</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --bg: #0f1115;
+            --card: #161a22;
+            --text: #e6e6e6;
+            --muted: #9aa0a6;
+            --accent: #4f8cff;
+            --border: #232837;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 80px 20px 60px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        header p {
+            margin-top: 12px;
+            color: var(--muted);
+            font-size: 18px;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 0 auto 60px;
+            padding: 0 20px;
+        }
+
+        h2 {
+            font-size: 26px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--accent);
+            padding-left: 12px;
+        }
+
+        p, li {
+            color: var(--muted);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--text);
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            border-top: 1px solid var(--border);
+            text-align: center;
+            padding: 30px 20px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Гайка</h1>
+    <p>Студент-программист · начинающий web-разработчик</p>
+</header>
+
+<section>
+    <h2>Обо мне</h2>
+    <p>
+        Я студент, изучаю программирование и веб-разработку.
+        Активно практикуюсь, делаю учебные и пет-проекты,
+        ищу стажировку или подработку для получения реального опыта.
+    </p>
+</section>
+
+<section>
+    <h2>Образование</h2>
+    <ul>
+        <li>Специальность: Программирование / IT</li>
+        <li>Формат обучения: студент</li>
+        <li>Интересы: веб-разработка, автоматизация, боты</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Навыки</h2>
+    <ul>
+        <li>HTML, CSS (адаптивная вёрстка)</li>
+        <li>JavaScript (базовый уровень)</li>
+        <li>Python (основы)</li>
+        <li>Telegram-боты</li>
+        <li>Git / GitHub (базово)</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Учебные проекты</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>Учебный Telegram-бот</h3>
+            <p>
+                Бот для практики Python: обработка команд,
+                логика ответов, работа с API.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Сайт-портфолио</h3>
+            <p>
+                Одностраничный сайт на HTML и CSS
+                с адаптацией под мобильные устройства.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Мини-проекты</h3>
+            <p>
+                Небольшие задания и эксперименты
+                для изучения JavaScript.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Цель</h2>
+    <p>
+        Получить практический опыт, развить навыки и
+        вырасти до уверенного разработчика.
+    </p>
+</section>
+
+<section>
+    <h2>Контакты</h2>
+    <p>Email: <a href="mailto:example@mail.com">example@mail.com</a></p>
+    <p>GitHub: <a href="#">github.com/username</a></p>
+</section>
+
+<footer>
+    © 2026 · ITMO
+</footer>
+
+</body>
 </html>
